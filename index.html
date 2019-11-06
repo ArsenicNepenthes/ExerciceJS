@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Exercice JS</title>
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-       <script type='text/javascript' src='script.js'></script>
         <style>
 
             body{
@@ -19,7 +18,7 @@
                 margin: 50px;
             }
 
-            .ennoncé{
+            .ennonce{
                 color: rgb(230, 169, 56);
             }
 
@@ -36,14 +35,19 @@
                 width: 50px;
             }
 
-            p.Debrouillardise{
+            p.debrouillardise{
                 color: rgb(230, 169, 56);
-            }            
+            }
+
+            #fighters{
+                color: rgb(230, 169, 56);
+                text-align: center;
+            }
         </style>
     </head>
 
     <body>
-        <div class="ennoncé">
+        <div class="ennonce">
            <center><p>
                 Une petite application qui permet, 
                 à partir d'une liste de nom, 
@@ -51,18 +55,21 @@
             </p></center>
         </div>
 
-        <div class="button" onclick="getRandom()">
-                <button>Select character</button>
+        <div class="button">
+            <button onclick="displayNFigthers(2)">Select character</button>
         </div>
+
+        <div id="fighters"></div>
 
         <div class="SF">
             <img src="SF.jpg" alt="Selection de personnages Street Fighter"/>
         </div>
 
-        <p class="Debrouillardise">Je ne suis pas douée en JS par contre je suis débrouillarde.<br>
+        <p class="debrouillardise">Je ne suis pas douée en JS par contre je suis débrouillarde.<br>
             J'ai trouvé ceci pour générer des équipes :
             <h3> <a href="https://www.dcode.fr/tirage-au-sort" target="blank"> Enjoy :D</a> </h3>
         </p>
         
+        <script type='text/javascript' src='script.js'></script>
     </body>
 </html>
